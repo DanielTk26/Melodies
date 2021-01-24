@@ -20,7 +20,6 @@ database and cloud storage. Enjoy!
 
 Check it out [here]( https://danieltk26.github.io/Melodies/)
 
-Have a temporary conversation with me. I like meeting and making new friends: [Chat with me here]( https://danieltk26.github.io/Daniel-Chats/)
  
 <h3 align="center">Have a nice Day Ahead 😁😉 !!!</h3>
 
