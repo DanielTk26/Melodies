@@ -1,0 +1,236 @@
+.fileUploadPage {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(rgb(82, 39, 201), rgb(176, 194, 15), rgb(12, 38, 185));
+  z-index: +7;
+  transition: 1s;
+}
+.uploadLayout {
+  position: absolute;
+  height: 30pc;
+  width: 100%;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: white;
+}
+.uploadLayout input {
+  margin-top: 10px;
+}
+.uploadSongName {
+  position: absolute;
+  height: 10px;
+  padding: 20px;
+  width: 15pc;
+  margin: auto;
+  top: 5pc;
+  right: 0;
+  left: 0;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+.uploadArtistName {
+  position: absolute;
+  height: 10px;
+  padding: 20px;
+  width: 15pc;
+  margin: auto;
+  top: 10pc;
+  right: 0;
+  left: 0;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+.uploadThumbnail {
+  color: transparent;
+}
+.uploadThumbnail::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.uploadThumbnail::before {
+  position: absolute;
+  content: "Upload Song thumbnail (png/jpg,etc.)";
+  color: black;
+  width: 15pc;
+  display: inline-block;
+  background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+  margin: auto;
+  right: 0;
+  left: 0;
+  outline: none;
+  border: none;
+  top: 15pc;
+}
+.uploadThumbnail:hover::before {
+  border-color: black;
+}
+.uploadThumbnail:active {
+  outline: 0;
+}
+.uploadThumbnail:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+.uploadBg {
+  color: transparent;
+}
+.uploadBg::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.uploadBg::before {
+  position: absolute;
+  content: "Upload Song Picture(png/jpg,etc)";
+  color: black;
+  width: 15pc;
+  display: inline-block;
+  background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+  margin: auto;
+  right: 0;
+  left: 0;
+  top: 18pc;
+  outline: none;
+  border: none;
+}
+.uploadBg:hover::before {
+  border-color: black;
+}
+.uploadBg:active {
+  outline: 0;
+}
+.uploadBg:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+.uploadMusic {
+  color: transparent;
+}
+.uploadMusic::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.uploadMusic::before {
+  position: absolute;
+  content: "Upload the Song File here(mp3,etc)";
+  color: black;
+  width: 15pc;
+  display: inline-block;
+  background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+  margin: auto;
+  right: 0;
+  left: 0;
+  top: 21pc;
+  outline: none;
+  border: none;
+}
+.uploadMusic:hover::before {
+  border-color: black;
+}
+.uploadMusic:active {
+  outline: 0;
+}
+.uploadMusic:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+#thumbnailUpload {
+  position: absolute;
+  width: 20pc;
+  height: 30px;
+  margin: auto;
+  right: 0;
+  left: 0;
+  top: 24pc;
+  outline: none;
+  border: none;
+}
+
+#bgUpload {
+  position: absolute;
+  width: 20pc;
+  height: 30px;
+  margin: auto;
+  right: 0;
+  left: 0;
+  top: 27pc;
+  outline: none;
+  border: none;
+}
+
+#audioUpload {
+  position: absolute;
+  width: 20pc;
+  height: 30px;
+  margin: auto;
+  right: 0;
+  left: 0;
+  top: 30pc;
+  outline: none;
+  border: none;
+}
+h1 {
+  position: absolute;
+  height: fit-content;
+  width: fit-content;
+  font-size: 45px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: auto;
+  top: 7pc;
+  right: 0;
+  left: 0;
+  color: white;
+  z-index: 9;
+}
+h2 {
+  position: absolute;
+  height: fit-content;
+  width: fit-content;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: auto;
+  bottom: 10px;
+  right: 0;
+  left: 0;
+  color: white;
+  z-index: 9;
+  font-size: 20px;
+  text-align: center;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Melodies - Upload Page</title>
+    <link rel="stylesheet" href="upload.css" />
+  </head>
+  <body>
+    <h1 style="position: absolute; left: 53px; top: 0px;">Add Your Favourite Song 😄</h1>
+    <div class="fileUploadPage">
+      <center class="uploadLayout">
+        <input type="text" placeholder="Song Name" class="uploadSongName" />
+        <input type="text" placeholder="Artist" class="uploadArtistName" />
+        <input
+          type="file"
+          value="upload"
+          class="uploadThumbnail"
+          data-buttonText="thumbnail"
+          accept="image/jpeg,image/gif,image/png,image/jpg"
+          
+        />
+        <input
+          type="file"
+          value="upload"
+          class="uploadBg"
+          data-buttonText="Background"
+          accept="image/jpeg,image/gif,image/png,image/jpg"
+        />
+        <input
+          type="file"
+          value="upload"
+          class="uploadMusic"
+          data-buttonText="Music"
+          accept="audio/mp3,audio/odd,audio/wav"
+        />
+        <progress
+          value="0"
+          min="0"
+          max="100"
+          class="uploadProgress"
+          id="thumbnailUpload"
+        >
+          Thumbnail Upload Progress</progress
+        >
+        <progress
+          value="0"
+          min="0"
+          max="100"
+          class="uploadProgress"
+          id="bgUpload"
+        >
+          Background Upload Progress</progress
+        >
+        <progress
+          value="0"
+          min="0"
+          max="100"
+          class="uploadProgress"
+          id="audioUpload"
+        >
+          Audio Upload Progress</progress
+        >
+      </center>
+    </div>
+    <h2>Close this tab after the uploading is done</h2>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase.js"></script>
+    <script>
+      var firebaseConfig = {
+    apiKey: "AIzaSyClEIWsi-N0Idwl5UMtoXKUoX04EZ0MuLQ",
+    authDomain: "melodies-58239.firebaseapp.com",
+    databaseURL: "https://melodies-58239-default-rtdb.firebaseio.com",
+    projectId: "melodies-58239",
+    storageBucket: "melodies-58239.appspot.com",
+    messagingSenderId: "1061029878100",
+  };
+firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="upload.js"></script>
+  </body>
+</html>

@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background: #191624;
+  font-family: "Poppins", sans-serif;
+}
+.header {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: +5;
+  transition: 0.5s;
+  background: #191624;
+}
+.headerImg {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.player {
+  position: fixed;
+  top: 80px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  width: 90%;
+  height: 274px;
+  border-radius: 40px;
+  z-index: +1;
+  background: linear-gradient(135deg, #4410d3, #f2f1f7);
+}
+.player .song-name {
+  position: relative;
+  font-size: 36px;
+  height: 50px;
+  max-width: 60%;
+  line-height: 40px;
+  width: fit-content;
+  color: rgb(233, 220, 220);
+  top: 55px;
+  margin-left: 20px;
+  font-weight: 600;
+}
+.player .artist-name {
+  position: relative;
+  font-size: 13px;
+  height: fit-content;
+  width: fit-content;
+  color: rgb(233, 220, 220);
+  top: -20px;
+  margin-left: 23px;
+  font-weight: 600;
+}
+.player .song-thumbnail {
+  position: absolute;
+  width: 118px;
+  height: 118px;
+  border-radius: 40px;
+  top: 10px;
+  right: 10px;
+  transition: 0.5s;
+  background: url("./220px-Ariana_Grande_No_Tears_Left_to_Cry.png");
+  background-size: 100%;
+  margin-right: auto;
+}
+.player .controls {
+  position: absolute;
+  width: 70%;
+  height: 37.5px;
+  margin: auto;
+  top: 155px;
+  right: 0;
+  left: 0;
+  z-index: +2;
+}
+.player .controls .play-button {
+  position: absolute;
+  margin: auto;
+  height: 35.5px;
+  width: 33px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: 0.25s;
+  background: url("./Vector\ 1\ \(1\).png");
+  background-size: 100%;
+}
+.player .controls .prev-button {
+  position: absolute;
+  height: 31px;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+.player .controls .next-button {
+  position: absolute;
+  height: 31px;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+.player .controls .interactive-progress {
+  position: absolute;
+  margin: auto;
+  right: 0;
+  left: 0;
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  top: 63px;
+  outline: none;
+}
+.player .controls .interactive-progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 17px;
+  width: 17px;
+  border-radius: 50px;
+  background: #191624;
+}
+.player .progress-line {
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  margin: auto;
+  top: 225px;
+  right: 0;
+  left: 0;
+  background: #191624;
+}
+
+.songs {
+  position: absolute;
+  width: 85%;
+  height: fit-content;
+  margin: auto;
+  top: 365px;
+  right: 0;
+  left: 0;
+}
+.songs .songs-title {
+  color: #e5e5e5;
+  font-size: 48px;
+  margin: auto;
+  top: 0;
+  left: 0;
+}
+.songs .add-button {
+  position: absolute;
+  margin: auto;
+  top: 25px;
+  right: 10px;
+}
+.songs .container {
+  position: relative;
+  top: 20px;
+  height: fit-content;
+  width: 97%;
+}
+.song-box {
+  height: 60px;
+  width: 97%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.songs .container .song-thumbnail {
+  height: 65px;
+  border-radius: 25px;
+  position: relative;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+.songs .container .song-name {
+  position: relative;
+  height: 35px;
+  width: 225px;
+  word-wrap: none;
+  overflow-y: hidden;
+  overflow-x: auto;
+  color: #e5e5e5;
+  font-size: 24px;
+  left: 125px;
+  top: -65px;
+}
+.songs .container .artist-name {
+  position: relative;
+  height: fit-content;
+  width: fit-content;
+  color: #e5e5e5;
+  font-size: 14px;
+  left: 125px;
+  top: -65px;
+}
+.songs .container .play-button {
+  position: relative;
+  margin-top: auto;
+  margin-bottom: auto;
+  right: 0;
+  top: -105px;
+  float: right;
+}
+
+.wave-design {
+  position: fixed;
+  width: 100%;
+  margin: auto;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -2;
+  opacity: 0.9;
+}

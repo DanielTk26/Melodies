@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Melodies</title>
+<meta name="theme-color" content="#191624" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" href="./design.css" />
+  </head>
+  <body>
+    <audio
+      src="https://firebasestorage.googleapis.com/v0/b/rhythm-3ef06.appspot.com/o/Bored_Billie%20Ellish%2FAudio?alt=media&token=a7384d13-b869-48cc-9aca-dc614c3da364"
+      class="song"
+    ></audio>
+
+
+    <div class="header">
+      <img src="logo.png" class="headerImg" />
+    </div>
+
+    <div class="player">
+      <div class="song-thumbnail"></div>
+      <div class="song-name">Problem</div>
+      <div class="artist-name">Ariana Grande</div>
+      <div class="controls">
+        <img src="./Vector 2.png" class="prev-button" />
+        <div class="play-button"></div>
+        <img src="./Vector 3.png" class="next-button" />
+        <input
+          type="range"
+          class="interactive-progress"
+          min="0"
+          max=""
+          value="0"
+          onchange='const progressBar = document.querySelector(".interactive-progress");
+    song.currentTime = progressBar.value;'
+        />
+      </div>
+      <div class="progress-line"></div>
+    </div>
+
+    <div class="songs">
+      <div class="songs-title">Songs</div>
+      <img src="./Group 2.png" class="add-button" />
+      <div class="container"></div>
+    </div>
+    <img src="./back.jpg" class="wave-design" />
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase.js"></script>
+    <script>
+
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyClEIWsi-N0Idwl5UMtoXKUoX04EZ0MuLQ",
+        authDomain: "melodies-58239.firebaseapp.com",
+        databaseURL: "https://melodies-58239-default-rtdb.firebaseio.com",
+        projectId: "melodies-58239",
+        storageBucket: "melodies-58239.appspot.com",
+        messagingSenderId: "1061029878100",
+      };
+      firebase.initializeApp(firebaseConfig);
+    
+    </script>
+    <script src="./app.js"></script>
+  </body>
+</html>
