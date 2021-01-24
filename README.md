@@ -3,7 +3,7 @@ Listen to songs | Upload Songs | Realtime | Enjoy! |
 
 ![alt text](cover.png)
 <p align="center">
-  <b><i>Melodies </i></b>
+  <b><i>Melodies Homepage</i></b>
 
 
 <br />
