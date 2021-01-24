@@ -1,4 +1,4 @@
-# [Melodies]( https://danieltk26.github.io/Melodies/) <img src="logo.png"></h2>
+# [<img src="logo.png">]( https://danieltk26.github.io/Melodies/)</h2>
 Listen to songs | Upload Songs | Realtime | Enjoy! |
 
 ![alt text](cover.png)
