@@ -27,7 +27,7 @@ firebase
     document.querySelector(".container").innerHTML +=
       "<div class='song-box' onclick = playThisSong(" +
       i++ +
-      ")><img src='https://firebasestorage.googleapis.com/v0/b/melodies-58239.appspot.com/o/" +
+      ")><img src='https://firebasestorage.googleapis.com/v0/b/music-a8007.appspot.com/o/" +
       s.val() +
       "%2FThumbnail?alt=media&token=8fd8d37index-a19a-436d-bff4-c9cff91775a8' class='song-thumbnail'><div class='artist-name'>" +
       s.val().substring(s.val().indexOf("_") + 1) +
@@ -36,11 +36,11 @@ firebase
       "</div><img src='./Vector 4.png' class='play-button'></div>";
 
     song.src =
-      "https://firebasestorage.googleapis.com/v0/b/melodies-58239.appspot.com/o/" +
+      "https://firebasestorage.googleapis.com/v0/b/music-a8007.appspot.com/o/" +
       songSrcs[0] +
       "%2FAudio?alt=media&token=a7384d13-b869-48cc-9aca-dc614c3da364";
     document.querySelector(".player .song-thumbnail").style.background =
-      "url('https://firebasestorage.googleapis.com/v0/b/melodies-58239.appspot.com/o/" +
+      "url('https://firebasestorage.googleapis.com/v0/b/music-a8007.appspot.com/o/" +
       songSrcs[0] +
       "%2FThumbnail?alt=media&token=8fd8d37index-a19a-436d-bff4-c9cff91775a8')";
     document.querySelector(".player .song-thumbnail").style.backgroundSize =
@@ -56,7 +56,7 @@ firebase
 function playThisSong(index) {
   songNumber = index;
   song.src =
-    "https://firebasestorage.googleapis.com/v0/b/melodies-58239.appspot.com/o/" +
+    "https://firebasestorage.googleapis.com/v0/b/music-a8007.appspot.com/o/" +
     songSrcs[index] +
     "%2FAudio?alt=media&token=a7384d13-b869-48cc-9aca-dc614c3da364";
   document.querySelector(".play-button").style.background =
@@ -64,7 +64,7 @@ function playThisSong(index) {
   document.querySelector(".play-button").style.backgroundSize = "110%";
   song.play();
   document.querySelector(".player .song-thumbnail").style.background =
-    "url('https://firebasestorage.googleapis.com/v0/b/melodies-58239.appspot.com/o/" +
+    "url('https://firebasestorage.googleapis.com/v0/b/music-a8007.appspot.com/o/" +
     songSrcs[index] +
     "%2FThumbnail?alt=media&token=8fd8d37index-a19a-436d-bff4-c9cff91775a8')";
   document.querySelector(".player .song-thumbnail").style.backgroundSize =
